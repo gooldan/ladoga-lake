@@ -15,7 +15,7 @@ def before_request():
 def index():
     cur = g.db_conn.cursor()
     cur.execute("SELECT * FROM termometer;")
-    return render_template('index.html', measures=cur.fetchall())
+    return render_template('index.html', termometers=cur.fetchall())
 
 
 if __name__ == '__main__':
