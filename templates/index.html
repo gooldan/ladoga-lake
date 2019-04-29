@@ -14,10 +14,10 @@
   <body>
     <div class="container">
       <div>
-        <h1>Termometers:</h1>
+        <h1>Termometers on ladoga lake:</h1>
         <ul>
           {% for termometer in termometers %}
-            <li>{{ termometer[0] }} - <b>{{ termometer[1] }}</b></li>
+              <li><b>ID</b>:{{ termometer[0] }}; <b>NAME</b>: {{ termometer[1] }};<b>POSITION</b>: {{ termometer[2] }}</li>
           {% endfor %}
         </ul>
       </div>
