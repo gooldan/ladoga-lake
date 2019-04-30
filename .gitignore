@@ -97,6 +97,8 @@ celerybeat-schedule
 
 .idea/
 
+test.sql
+
 # Environments
 .env
 .venv
